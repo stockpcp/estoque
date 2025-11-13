@@ -40,7 +40,7 @@
       "fullName": "100% Pinus",
       "icon": "🌲",
       "badge": "Densidade Média-Baixa",
-      "description": "Compensado fabricado inteiramente com lâminas de pinus.",
+      "description": "Compensado fabricado com todas as lâminas de pinus, sendo um dos materiais mais populares e versáteis do mercado, amplamente utilizado à sua leveza, resistência e custo acessível.",
       "layers": [
         { "type": "Pinus", "label": "face", "wood": "Softwood", "color": "#F4E4C1" },
         { "type": "Pinus", "label": "miolo", "wood": "Softwood", "color": "#F4E4C1" },
