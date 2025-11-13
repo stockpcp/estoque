@@ -53,7 +53,7 @@
         .nav-menu a {
             color: #1a1a1a;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 500;
             transition: color 0.3s;
         }
@@ -85,7 +85,7 @@
         }
 
         .hero h1 {
-            font-size: 38px;
+            font-size: 42px;
             color: #1a1a1a;
             margin-bottom: 16px;
         }
@@ -220,7 +220,7 @@
 
         .results-count {
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 700;
             color: #2d5016;
         }
 
@@ -316,7 +316,7 @@
             padding: 4px 8px;
             border-radius: 4px;
             font-size: 11px;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
             margin-left: 8px;
             white-space: nowrap;
@@ -402,7 +402,7 @@
 
         .footer-column h3 {
             font-size: 15px;
-            font-weight: 600;
+            font-weight: 700;
             color: #1a1a1a;
             margin-bottom: 16px;
         }
@@ -498,10 +498,10 @@
 
     <!-- Info Badge -->
     <div class="info-badge">
-        <p><strong>⚠️ Informações Importantes sobre Preços e Condições de Venda:</strong></p>
-        <p>Preços: Todos os valores são cotados em Reais (R$), por metro cúbico (m³), com base EXW Guarapuava/PR. Os impostos aplicáveis serão acrescidos conforme a legislação vigente na região de destino.</p>
-        <p>Venda: Comercialização apenas por palete fechado. Consulte a quantidade de chapas por palete específica de cada produto.</p>
-        <p>Frete: O custo do transporte não está incluído. Nossa equipe de logística está à disposição para auxiliar na contratação do frete ideal para sua localidade.</p>
+        <p><strong>⚠️ INFORMAÇÕES IMPORTANTES SOBRE PREÇOS E VENDA:</strong></p>
+        <p>Todos os preços são EXW Guarapuava/PR em Reais (R$) por metro cúbico (m³), será acrescido os impostos vigentes no Brasil.</p>
+        <p>Vendemos por palete completo (consulte quantidade de chapas por palete em cada produto).</p>
+        <p>Frete não incluso, podemos auxiliar na contratação de transporte para sua região.</p>
     </div>
 
     <div class="container">
@@ -613,8 +613,8 @@
             </div>
             <div class="footer-column">
                 <h3>Contato</h3>
-                <a href="tel:+554236298500" class="footer-link">📞 (42) 3629-8500</a>
-                <a href="mailto:comercial1@repinho.ind.br" class="footer-link">✉️ comercial1@repinho.ind.br</a>
+                <a href="tel:+554236231234" class="footer-link">📞 (42) 3623-1234</a>
+                <a href="mailto:estoque@repinho.ind.br" class="footer-link">✉️ estoque@repinho.ind.br</a>
                 <p class="footer-link">📍 Guarapuava, PR</p>
             </div>
             <div class="footer-column">
@@ -833,5 +833,220 @@
         // Inicializar
         loadStockData();
     </script>
+
+<!-- CSS do Modal -->
+<style>
+    /* Modal Overlay */
+    .modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 9998;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .modal-overlay.active {
+        display: block;
+    }
+
+    /* Modal Container */
+    .modal-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 700px;
+        max-height: 85vh;
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        overflow: hidden;
+        animation: slideUp 0.3s ease;
+    }
+
+    .modal-container.active {
+        display: block;
+    }
+
+    /* Modal Header */
+    .modal-header {
+        background: linear-gradient(135deg, #2d5016 0%, #3a6b1f 100%);
+        padding: 24px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #ffffff;
+        margin: 0;
+    }
+
+    .modal-close {
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+        color: #ffffff;
+        font-size: 28px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s;
+        line-height: 1;
+        padding: 0;
+    }
+
+    .modal-close:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Modal Body */
+    .modal-body {
+        padding: 32px;
+        overflow-y: auto;
+        max-height: calc(85vh - 88px);
+    }
+
+    .modal-body p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #333333;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .modal-body strong {
+        color: #2d5016;
+        font-weight: 600;
+    }
+
+    .modal-emoji {
+        font-size: 20px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translate(-50%, -45%);
+        }
+        to {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+        .modal-container {
+            width: 95%;
+            max-height: 90vh;
+        }
+
+        .modal-header {
+            padding: 20px 24px;
+        }
+
+        .modal-title {
+            font-size: 18px;
+        }
+
+        .modal-body {
+            padding: 24px;
+            max-height: calc(90vh - 76px);
+        }
+
+        .modal-body p {
+            font-size: 15px;
+        }
+    }
+</style>
+
+<!-- HTML do Modal -->
+<div class="modal-overlay" id="modalOverlay"></div>
+<div class="modal-container" id="modalVoceSabia">
+    <div class="modal-header">
+        <h2 class="modal-title">📚 Você Sabia? A Origem do Termo "Madeirite"</h2>
+        <button class="modal-close" id="modalClose">&times;</button>
+    </div>
+    <div class="modal-body">
+        <p>
+            Você já parou para pensar por que chamamos aquela chapa de madeira tão versátil e presente em qualquer obra de <strong>"madeirite"</strong>? <span class="modal-emoji">🤔</span> É um termo tão comum no nosso dia a dia da construção civil que parece ter nascido com o próprio material, mas a verdade é que por trás dele existe uma história fascinante de sucesso empresarial e um legado que moldou o vocabulário brasileiro!
+        </p>
+
+        <p>
+            Pois é, o nome <strong>"madeirite"</strong> não é o termo técnico correto do produto – que, aliás, é <strong>"compensado"</strong> – mas sim uma herança direta de uma das maiores e mais influentes empresas do setor madeireiro brasileiro: a <strong>Indústrias Madeirit S.A.</strong> Fundada em 1966, essa gigante, com sede em Barueri (SP) e uma importante unidade fabril em Guarapuava (PR), produziu chapas de compensado com tanta qualidade, em tal volume e com tamanha penetração no mercado que seu nome se tornou, para muitos, sinônimo do próprio material. Um verdadeiro fenômeno de mercado e de linguagem!
+        </p>
+
+        <p>
+            Esse processo, conhecido como <strong>"generificação de marca"</strong>, acontece quando uma marca se torna tão popular e dominante que passa a nomear toda uma categoria de produtos, independentemente do fabricante. Pense em <strong>"Bombril"</strong> para esponja de aço, <strong>"Xerox"</strong> para cópia de documentos, ou <strong>"Durex"</strong> para fita adesiva.
+        </p>
+
+        <p>
+            Mesmo após o encerramento das atividades da Indústrias Madeirit S.A. em 2009, seu legado vive em cada canteiro de obras e loja de materiais de construção do país. Incrível como uma marca pode moldar nosso vocabulário e permanecer viva na memória coletiva, não é? <span class="modal-emoji">✨</span>
+        </p>
+
+        <p style="margin-bottom: 0;">
+            Qual outra marca você conhece que virou nome comum de produto? Compartilhe sua curiosidade nos comentários! <span class="modal-emoji">👇</span>
+        </p>
+    </div>
+</div>
+
+<!-- JavaScript do Modal -->
+<script>
+    // Elementos do modal
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalVoceSabia = document.getElementById('modalVoceSabia');
+    const modalClose = document.getElementById('modalClose');
+    const voceSabiaLink = document.querySelector('a[href="voce-sabia.html"]');
+
+    // Função para abrir o modal
+    function openModal(e) {
+        e.preventDefault();
+        modalOverlay.classList.add('active');
+        modalVoceSabia.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Função para fechar o modal
+    function closeModal() {
+        modalOverlay.classList.remove('active');
+        modalVoceSabia.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Event listeners
+    if (voceSabiaLink) {
+        voceSabiaLink.addEventListener('click', openModal);
+    }
+    
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+
+    // Fechar com tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modalVoceSabia.classList.contains('active')) {
+            closeModal();
+        }
+    });
+</script>
+
 </body>
 </html>
