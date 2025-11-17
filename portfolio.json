@@ -95,17 +95,17 @@
       "id": "nc",
       "code": "NC",
       "name": "Não Conforme",
-      "fullName": "Descartes de Produção",
+      "fullName": "Material Secundário de Produção",
       "icon": "⚠️",
       "badge": "Sem Garantia Estrutural ou Estética",
-      "description": "Produtos que não atendem os requisitos do mercado externo devido a defeitos específicos de processo ou qualidade visual. São descartes de produção que podem ter origem de qualquer portfólio (NS, SS ou ST), mas apresentam não conformidades que impedem sua comercialização no mercado internacional.",
+      "description": "Produtos que não atendem os requisitos do mercado externo devido a defeitos específicos de processo ou qualidade visual. São materiais secundários de produção que podem ter origem de qualquer portfólio (NS, SS ou ST), mas apresentam não conformidades que impedem sua comercialização no mercado internacional.",
       "warning": {
         "title": "SEM GARANTIA ESTRUTURAL OU ESTÉTICA",
         "message": "Produtos NC são vendidos como estão, sem garantias de desempenho estrutural ou visual."
       },
       "classifications": [
         {
-          "name": "Fall-Down",
+          "name": "Falldown",
           "description": "Defeitos mecânicos e visuais",
           "defects": ["Cantos quebrados", "Enchimento com falhas nas bordas", "Marcas de prensagem", "Variações no esquadro", "Variações na espessura", "Superfície corrigida com massa e lixamento"],
           "integrity": "Pode estar preservada (depende do defeito)",
@@ -135,7 +135,7 @@
         },
         {
           "icon": "⚠️",
-          "name": "Descarte Padrão",
+          "name": "Material Secundário",
           "description": "Defeitos evidentes, aproveitamento limitado, preço reduzido"
         }
       ],
