@@ -6,10 +6,6 @@
     <title>Estoque Disponível - Repinho Compensados</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <style>
-/* ========== VARIÁVEIS CSS (CUSTOM PROPERTIES) ========== */
-
-
-
         * {
             margin: 0;
             padding: 0;
@@ -17,104 +13,69 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Inter',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #f5f5f5;
         }
 
-        /* Header (Padronizado) */
-/* ========== HEADER PADRONIZADO ========== */
-.site-header {
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #e5e5e5;
-    padding: 12px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        /* Header */
+        .site-header {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e5e5e5;
+        }
 
-.header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-}
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
+        .logo img {
+            height: 40px;
+            display: block;
+        }
 
-.logo img {
-    height: 40px;
-    width: auto;
-    display: block;
-}
+        .nav-menu {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
 
-nav {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
+        .nav-menu a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
 
-.nav-menu {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+        .nav-menu a:hover {
+            color: #2d5016;
+        }
 
-.nav-menu li {
-    margin: 0;
-    padding: 0;
-}
+        .cta-button {
+            background: #2d5016;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
 
-.nav-menu a {
-    color: #666666;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    transition: color 0.2s;
-    white-space: nowrap;
-}
-
-.nav-menu a:hover {
-    color: #1a1a1a;
-}
-
-.cta-button {
-    background: #2d5016;
-    color: #ffffff;
-    padding: 10px 24px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    transition: background 0.2s;
-    white-space: nowrap;
-}
-
-.cta-button:hover {
-    background: #234010;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    nav {
-        display: none;
-    }
-    
-    .header-container {
-        padding: 0 20px;
-    }
-}
-
+        .cta-button:hover {
+            background: #1f3810;
+        }
 
         /* Hero Section */
         .hero {
@@ -124,7 +85,7 @@ nav {
         }
 
         .hero h1 {
-            font-size: 42px;
+            font-size: 35px;
             color: #1a1a1a;
             margin-bottom: 16px;
         }
@@ -151,7 +112,7 @@ nav {
             border-radius: 6px;
             margin: 24px auto;
             max-width: 1400px;
-            font-size: 13px;
+            font-size: 14px;
             line-height: 1.8;
         }
 
@@ -280,7 +241,7 @@ nav {
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 15px;
+            font-size: 16px;
         }
 
         thead {
@@ -509,8 +470,6 @@ nav {
                 min-width: 1200px;
             }
         }
-
-
     </style>
 </head>
 <body>
@@ -654,7 +613,7 @@ nav {
             </div>
             <div class="footer-column">
                 <h3>Contato</h3>
-                <a href="tel:+554236231234" class="footer-link">📞 (42) 3629-8500</a>
+                <a href="tel:+554236298500" class="footer-link">📞 (42) 3629-8500</a>
                 <a href="mailto:comercial1@repinho.ind.br" class="footer-link">✉️ comercial1@repinho.ind.br</a>
                 <p class="footer-link">📍 Guarapuava, PR</p>
             </div>
@@ -798,7 +757,7 @@ nav {
                     <td class="align-right">R$ ${formatNumber(product.PricePerM3)}</td>
                     <td class="align-right">R$ ${formatNumber(pricePerSheet)}</td>
                     <td>${featuredHtml}</td>
-                    <td><button class="btn-quote" onclick="quoteProduct('${product.Certificate}', '${product.Grade}', '${product.Size}', ${product.Thickness}, '${product.Composition}', '${product.Portfolio}')">Cotar</button></td>
+                    <td><button class="btn-quote" onclick="quoteProduct('${product.Certificate}', '${product.Grade}', '${product.Size}', ${product.Thickness})">Cotar</button></td>
                 `;
 
                 tbody.appendChild(tr);
@@ -847,30 +806,9 @@ nav {
         }
 
         // Cotar produto
-        function quoteProduct(cert, grade, size, thickness, composition, portfolio) {
-            // Buscar dados completos do produto
-            const product = stockData.find(p => 
-                p.Certificate === cert && 
-                p.Grade === grade && 
-                p.Size === size && 
-                p.Thickness == thickness
-            );
-
-            // Criar mensagem personalizada
-            const message = `Olá! Gostaria de cotar o seguinte produto:
-
-📦 Produto: Compensado ${product ? product.Composition : composition}
-📏 Espessura: ${thickness}mm
-📐 Dimensões: ${size}mm
-🌲 Composição: ${product ? product.Composition : composition}
-🏷️ Portfólio: ${product ? product.Portfolio : portfolio}
-⭐ Qualidade: ${grade}
-🔖 Certificação: ${cert}
-
-Aguardo retorno!`;
-
-            // Abrir WhatsApp diretamente
-            const whatsappUrl = `https://wa.me/5542036298520?text=${encodeURIComponent(message)}`;
+        function quoteProduct(cert, grade, size, thickness) {
+            const message = `Olá! Gostaria de cotar o produto:\n\nCertificação: ${cert}\nQualidade: ${grade}\nDimensão: ${size}mm\nEspessura: ${thickness}mm`;
+            const whatsappUrl = `https://wa.me/5542999999999?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }
 
@@ -982,16 +920,16 @@ Aguardo retorno!`;
     }
 
     .modal-body p {
-        font-size: 16px;
-        line-height: 1.8;
+        font-size: 15px;
+        line-height: 1.65;
         color: #333333;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         text-align: justify;
     }
 
     .modal-body strong {
         color: #2d5016;
-        font-weight: 600;
+        font-weight: 550;
     }
 
     .modal-emoji {
@@ -1066,8 +1004,7 @@ Aguardo retorno!`;
         </p>
 
         <p style="margin-bottom: 0;">
-            Qual outra marca você conhece que virou nome comum de produto? Compartilhe sua curiosidade nos comentários! <span class="modal-emoji">👇</span>
-        </p>
+            Esta é uma homenagem à história da indústria brasileira e ao impacto cultural que grandes empresas deixam em nosso vocabulário cotidiano.</p>
     </div>
 </div>
 
