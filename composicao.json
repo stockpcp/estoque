@@ -40,7 +40,7 @@
       "fullName": "100% Pinus",
       "icon": "🌲",
       "badge": "Densidade Média-Baixa",
-      "description": "Compensado fabricado inteiramente com lâminas de pinus.",
+      "description": "Compensado fabricado com todas as lâminas de pinus, sendo um dos materiais mais populares e versáteis do mercado, amplamente utilizado à sua leveza, resistência e custo acessível.",
       "layers": [
         { "type": "Pinus", "label": "face", "wood": "Softwood", "color": "#F4E4C1" },
         { "type": "Pinus", "label": "miolo", "wood": "Softwood", "color": "#F4E4C1" },
@@ -54,7 +54,7 @@
         "avg": 538,
         "unit": "kg/m³",
         "level": "Mínima",
-        "visual": "⚪⚪⚫⚫⚫"
+        "visual": "🟢🟢⚫⚫⚫"
       },
       "characteristics": {
         "weight": "Leve",
@@ -90,7 +90,7 @@
         "avg": 605,
         "unit": "kg/m³",
         "level": "Média",
-        "visual": "⚪⚪⚪⚫⚫"
+        "visual": "🟢🟢🟢⚫⚫"
       },
       "characteristics": {
         "weight": "Médio",
@@ -126,7 +126,7 @@
         "avg": 665,
         "unit": "kg/m³",
         "level": "Alta",
-        "visual": "⚪⚪⚪⚪⚫"
+        "visual": "🟢🟢🟢🟢⚫"
       },
       "characteristics": {
         "weight": "Pesado",
@@ -162,7 +162,7 @@
         "avg": 715,
         "unit": "kg/m³",
         "level": "Máxima",
-        "visual": "⚪⚪⚪⚪⚪"
+        "visual": "🟢🟢🟢🟢🟢"
       },
       "characteristics": {
         "weight": "Muito pesado",
@@ -198,7 +198,7 @@
         "avg": 630,
         "unit": "kg/m³",
         "level": "Média-Alta",
-        "visual": "⚪⚪⚪⚪⚫"
+        "visual": "🟢🟢🟢🟢⚫"
       },
       "characteristics": {
         "weight": "Pesado",
@@ -234,7 +234,7 @@
         "avg": 585,
         "unit": "kg/m³",
         "level": "Média",
-        "visual": "⚪⚪⚪⚫⚫"
+        "visual": "🟢🟢🟢⚫⚫"
       },
       "characteristics": {
         "weight": "Médio",
