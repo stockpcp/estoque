@@ -757,7 +757,7 @@
                     <td class="align-right">R$ ${formatNumber(product.PricePerM3)}</td>
                     <td class="align-right">R$ ${formatNumber(pricePerSheet)}</td>
                     <td>${featuredHtml}</td>
-                    <td><button class="btn-quote" onclick="quoteProduct('${product.Certificate}', '${product.Grade}', '${product.Size}', ${product.Thickness}, '${product.Composition}', '${product.Portfolio}')">Cotar</button></td>
+                    <td><button class="btn-quote" onclick="quoteProduct('${product.Certificate}', '${product.Grade}', '${product.Size}', ${product.Thickness})">Cotar</button></td>
                 `;
 
                 tbody.appendChild(tr);
@@ -806,29 +806,8 @@
         }
 
         // Cotar produto
-        function quoteProduct(cert, grade, size, thickness, composition, portfolio) {
-            // Buscar dados completos do produto
-            const product = stockData.find(p => 
-                p.Certificate === cert && 
-                p.Grade === grade && 
-                p.Size === size && 
-                p.Thickness == thickness
-            );
-
-            // Criar mensagem personalizada
-            const message = `Olá! Gostaria de cotar o seguinte produto:
-
-📦 Produto: Compensado ${product ? product.Composition : composition}
-📏 Espessura: ${thickness}mm
-📐 Dimensões: ${size}mm
-🌲 Composição: ${product ? product.Composition : composition}
-🏷️ Portfólio: ${product ? product.Portfolio : portfolio}
-⭐ Qualidade: ${grade}
-🔖 Certificação: ${cert}
-
-Aguardo retorno!`;
-
-            // Abrir WhatsApp diretamente
+        function quoteProduct(cert, grade, size, thickness) {
+            const message = `Olá! Gostaria de cotar o produto:\n\nCertificação: ${cert}\nQualidade: ${grade}\nDimensão: ${size}mm\nEspessura: ${thickness}mm`;
             const whatsappUrl = `https://wa.me/554236298520?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }
