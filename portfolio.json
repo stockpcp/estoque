@@ -7,7 +7,7 @@
     "description": "Nossos compensados são classificados em 4 categorias de portfólio, cada uma com certificações e requisitos técnicos específicos. Esta classificação define os padrões de qualidade estrutural, resistência mecânica e certificações internacionais do produto."
   },
   "intro": {
-    "categories": ["NS - Não Estrutural", "SS - Especial (Frameply)", "ST - Estrutural", "NC - Não Conforme (Material secundário)"],
+    "categories": ["NS - Não Estrutural", "SS - Especial (Frameply)", "ST - Estrutural", "NC - Não Conforme (Descartes de produção)"],
     "note": "Todos os produtos (exceto NC) são fabricados com resina fenólica E1 de baixa emissão de formaldeído, testada pelo International Testing Center (ITC) com resultados de 0,00-0,01 ppm, bem abaixo do limite exigido de 0,05 ppm."
   },
   "products": [
@@ -18,7 +18,7 @@
       "fullName": "Non-Structural Plywood",
       "icon": "📦",
       "badge": "Versátil",
-      "description": "indicados para aplicações que não requerem resistência estrutural certificada, mas que ainda assim exigem qualidade e desempenho. Produzidos com resina fenólica E1, de baixa emissão de formaldeído, são uma solução segura e eficiente para diversas finalidades. São utilizados em embalagens, construções leves e sem exigência estrutural, componentes de mobiliário (como carcaças de armários e prateleiras sem carga crítica), revestimentos acústicos, forros, painéis decorativos e estruturas temporárias como palcos, estandes e plataformas. Representam uma excelente opção para projetos com orçamento reduzido, oferecendo ótimo custo-benefício.",
+      "description": "Painéis não estruturais versáteis, adequados para aplicações que não exigem resistência estrutural certificada. Fabricados com resina fenólica E1 de baixa emissão de formaldeído, atendem requisitos de qualidade para diversas aplicações não estruturais.",
       "specifications": {
         "classification": "Não Estrutural",
         "resin": "Fenólica E1 (baixa emissão de formaldeído)",
@@ -40,7 +40,7 @@
       "fullName": "Special Plywood",
       "icon": "⭐",
       "badge": "Qualidade Superior",
-      "description": "Compensados desenvolvidos com requisitos técnicos rigorosos, ideais para aplicações que demandam elevado controle de qualidade na fabricação de móveis. A linha inclui o Frameply (espessuras entre 18 e 22 mm), produzido com critérios exigentes de colagem, resistência mecânica e controle de vãos no miolo, garantindo estabilidade e desempenho superior. Também contempla um modelo especial de 6 mm, composto por três camadas de 100% eucalipto, com faces importadas de Eucalyptus urograndis, oferecendo excelente acabamento e uniformidade para aplicações refinadas.",
+      "description": "Compensados especiais com requisitos técnicos específicos para aplicações que exigem maior controle de qualidade. Inclui o produto Frameply (18-22mm) com restrições rigorosas para vãos no miolo, e o compensado especial de 6mm (3 camadas, 100% eucalipto) com faces importadas de urograndis.",
       "specifications": {
         "classification": "Especial",
         "resin": "Fenólica E1 (baixa emissão de formaldeído)",
@@ -74,7 +74,7 @@
       "fullName": "Structural Plywood",
       "icon": "🏗️",
       "badge": "Certificado",
-      "description": "Compensados especialmente desenvolvidos para aplicações estruturais, em conformidade com as rigorosas normas técnicas dos mercados europeu e norte-americano. Esses painéis garantem alta resistência mecânica e durabilidade, sendo ideais para obras que exigem desempenho estrutural comprovado. São amplamente utilizados na construção civil em elementos sujeitos a carga, como vigas, lajes, pilares e fôrmas para concreto armado aparente. Oferecem excelente rendimento, com possibilidade de múltiplas reutilizações. Também são recomendados para paredes, tetos e pisos estruturais que demandam sustentação e robustez, além de integrarem sistemas construtivos sustentáveis como wood frame e steel frame.",
+      "description": "Compensados certificados para uso estrutural, atendendo rigorosas normas do mercado europeu e norte-americano. Garantem requisitos de resistência mecânica e durabilidade para aplicações que exigem desempenho estrutural certificado.",
       "specifications": {
         "classification": "Estrutural",
         "resin": "Fenólica E1 (baixa emissão de formaldeído)",
@@ -95,17 +95,17 @@
       "id": "nc",
       "code": "NC",
       "name": "Não Conforme",
-      "fullName": "Material Secundário de Produção",
+      "fullName": "Descartes de Produção",
       "icon": "⚠️",
       "badge": "Sem Garantia Estrutural ou Estética",
-      "description": "Produtos que não atendem os requisitos do mercado externo devido a defeitos específicos de processo ou qualidade visual. São materiais secundários de produção que podem ter origem de qualquer portfólio (NS, SS ou ST), mas apresentam não conformidades que impedem sua comercialização no mercado internacional.",
+      "description": "Produtos que não atendem os requisitos do mercado externo devido a defeitos específicos de processo ou qualidade visual. São descartes de produção que podem ter origem de qualquer portfólio (NS, SS ou ST), mas apresentam não conformidades que impedem sua comercialização no mercado internacional.",
       "warning": {
         "title": "SEM GARANTIA ESTRUTURAL OU ESTÉTICA",
         "message": "Produtos NC são vendidos como estão, sem garantias de desempenho estrutural ou visual."
       },
       "classifications": [
         {
-          "name": "Falldown",
+          "name": "Fall-Down",
           "description": "Defeitos mecânicos e visuais",
           "defects": ["Cantos quebrados", "Enchimento com falhas nas bordas", "Marcas de prensagem", "Variações no esquadro", "Variações na espessura", "Superfície corrigida com massa e lixamento"],
           "integrity": "Pode estar preservada (depende do defeito)",
@@ -135,7 +135,7 @@
         },
         {
           "icon": "⚠️",
-          "name": "Material Secundário",
+          "name": "Descarte Padrão",
           "description": "Defeitos evidentes, aproveitamento limitado, preço reduzido"
         }
       ],
