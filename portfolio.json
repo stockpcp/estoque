@@ -18,7 +18,7 @@
       "fullName": "Non-Structural Plywood",
       "icon": "📦",
       "badge": "Versátil",
-      "description": "indicados para aplicações que não requerem resistência estrutural certificada, mas que ainda assim exigem qualidade e desempenho. Produzidos com resina fenólica E1, de baixa emissão de formaldeído, são uma solução segura e eficiente para diversas finalidades. São utilizados em embalagens, construções leves e sem exigência estrutural, componentes de mobiliário (como carcaças de armários e prateleiras sem carga crítica), revestimentos acústicos, forros, painéis decorativos e estruturas temporárias como palcos, estandes e plataformas. Representam uma excelente opção para projetos com orçamento reduzido, oferecendo ótimo custo-benefício.",
+      "description": "Indicados para aplicações que não requerem resistência estrutural certificada, mas que ainda assim exigem qualidade e desempenho. Produzidos com resina fenólica E1, de baixa emissão de formaldeído, são uma solução segura e eficiente para diversas finalidades. USO: são utilizados em embalagens, construções leves e sem exigência estrutural, componentes de mobiliário (como carcaças de armários e prateleiras sem carga crítica), revestimentos acústicos, forros, painéis decorativos e estruturas temporárias como palcos, estandes e plataformas. Representam uma excelente opção para projetos com orçamento reduzido, oferecendo ótimo custo-benefício.",
       "specifications": {
         "classification": "Não Estrutural",
         "resin": "Fenólica E1 (baixa emissão de formaldeído)",
@@ -40,7 +40,7 @@
       "fullName": "Special Plywood",
       "icon": "⭐",
       "badge": "Qualidade Superior",
-      "description": "Compensados desenvolvidos com requisitos técnicos rigorosos, ideais para aplicações que demandam elevado controle de qualidade na fabricação de móveis. A linha inclui o Frameply (espessuras entre 18 e 22 mm), produzido com critérios exigentes de colagem, resistência mecânica e controle de vãos no miolo, garantindo estabilidade e desempenho superior. Também contempla um modelo especial de 6 mm, composto por três camadas de 100% eucalipto, com faces importadas de Eucalyptus urograndis, oferecendo excelente acabamento e uniformidade para aplicações refinadas.",
+      "description": "Compensados desenvolvidos com requisitos técnicos rigorosos, ideais para aplicações que demandam elevado controle de qualidade na fabricação de móveis e embalagens especiais. A linha inclui o Frameply (espessuras entre 18 e 22 mm), produzido com critérios exigentes de colagem, resistência mecânica e controle de vãos no miolo, garantindo estabilidade e desempenho superior. Além disso, temos o produto especial com espessura de 6 mm, composto por três camadas de 100% eucalipto, com faces importadas, oferecendo excelente acabamento e uniformidade para aplicações refinadas.",
       "specifications": {
         "classification": "Especial",
         "resin": "Fenólica E1 (baixa emissão de formaldeído)",
@@ -54,7 +54,7 @@
           "name": "Frameply (18-22mm)",
           "dimensions": "2440 x 1220 mm",
           "thicknesses": ["18mm", "20mm", "21mm", "22mm"],
-          "features": ["Restrições rigorosas para vãos no miolo", "Estrutura forte e estável", "Qualidade superior para armações", "Resistência mecânica elevada"]
+          "features": ["Restrições rigorosas para vãos/"janelas" no miolo", "Estrutura forte e estável", "Qualidade superior para armações", "Resistência mecânica elevada"]
         },
         {
           "name": "Compensado Especial 6mm",
@@ -74,7 +74,7 @@
       "fullName": "Structural Plywood",
       "icon": "🏗️",
       "badge": "Certificado",
-      "description": "Compensados especialmente desenvolvidos para aplicações estruturais, em conformidade com as rigorosas normas técnicas dos mercados europeu e norte-americano. Esses painéis garantem alta resistência mecânica e durabilidade, sendo ideais para obras que exigem desempenho estrutural comprovado. São amplamente utilizados na construção civil em elementos sujeitos a carga, como vigas, lajes, pilares e fôrmas para concreto armado aparente. Oferecem excelente rendimento, com possibilidade de múltiplas reutilizações. Também são recomendados para paredes, tetos e pisos estruturais que demandam sustentação e robustez, além de integrarem sistemas construtivos sustentáveis como wood frame e steel frame.",
+      "description": "Compensados especialmente desenvolvidos para aplicações estruturais, em conformidade com as rigorosas normas técnicas dos mercados europeu e norte-americano. Esses painéis garantem alta resistência mecânica e durabilidade, sendo ideais para obras que exigem desempenho estrutural comprovado. USO: amplamente utilizados na construção civil em elementos sujeitos a carga, como vigas, lajes, pilares e fôrmas para concreto armado aparente. Oferecem excelente rendimento, com possibilidade de múltiplas reutilizações. Também são recomendados para paredes, tetos e pisos estruturais que demandam sustentação e robustez, além de integrarem sistemas construtivos sustentáveis como wood frame e steel frame.",
       "specifications": {
         "classification": "Estrutural",
         "resin": "Fenólica E1 (baixa emissão de formaldeído)",
@@ -86,7 +86,7 @@
       "requirements": ["Resistência à flexão certificada", "Resistência ao cisalhamento certificada", "Módulo de elasticidade certificado", "Durabilidade estrutural garantida", "Aderência entre camadas certificada", "Teor de umidade controlado"],
       "dimensions": {
         "sizes": ["2500 x 1250 mm", "2440 x 1220 mm"],
-        "thicknesses": ["9mm", "12mm", "15mm", "18mm", "21mm", "24mm", "27mm", "30mm"]
+        "thicknesses": ["12mm", "15mm", "18mm", "21mm", "24mm", "27mm", "30mm"]
       },
       "certifications": ["Resina E1 (baixa emissão de formaldeído)", "Teste ITC (International Testing Center)", "Normas estruturais europeias (EN 636)", "Normas estruturais norte-americanas (PS1-19)", "CE (Conformité Européenne)", "CARB (California Air Resources Board)", "FSC® disponível (sob consulta)"],
       "features": ["Certificação estrutural completa", "Atende normas internacionais rigorosas", "Resistência mecânica garantida", "Durabilidade comprovada", "Controle de qualidade máximo", "Rastreabilidade de produção"]
@@ -120,7 +120,7 @@
           "structural": "NÃO RECOMENDADO"
         }
       ],
-      "reasons": ["Defeitos visuais nas faces (fora da grade especificada)", "Defeitos mecânicos (cantos, bordas, esquadro)", "Problemas de colagem (bolhas, descolamento)", "Variações dimensionais (espessura, esquadro)", "Marcas de processo (prensagem, transporte)", "Combinação de múltiplos defeitos menores"],
+      "reasons": ["Defeitos visuais nas faces (fora da qualidade especificada)", "Defeitos mecânicos (cantos, bordas, esquadro)", "Problemas de colagem (bolhas, descolamento)", "Variações dimensionais (espessura, esquadro)", "Marcas de processo (prensagem, transporte)", "Combinação de múltiplos defeitos menores"],
       "considerations": ["Tipo de defeito presente", "Impacto do defeito na sua aplicação", "Possibilidade de recorte/aproveitamento", "Necessidade de resistência estrutural", "Requisitos visuais do projeto", "Custo-benefício vs produto conforme"],
       "categories": [
         {
