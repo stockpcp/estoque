@@ -13,374 +13,22 @@
   <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
   <meta name="theme-color" content="#2d5016">
   
-  <!-- Google Fonts - Inter Local -->
-  <link rel="stylesheet" href="fonts/inter.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entenda as diferenças entre Falldown e Shop Grade - Qualidades NC (Não Conforme) de compensados">
-    <title>Qualidades NC: Falldown e Shop Grade - Repinho</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
-    
-    <!-- Google Fonts -->
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background: #ffffff;
-        }
-        
-        /* Header */
-        .site-header {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            padding: 12px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 40px;
-            display: block;
-        }
-
-        .nav-menu {
-            display: flex;
-            gap: 32px;
-            list-style: none;
-        }
-
-        .nav-menu a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-menu a:hover {
-            color: #2d5016;
-        }
-
-        .cta-button {
-            background: #2d5016;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-
-        .cta-button:hover {
-            background: #1f3810;
-        }
-        
-        /* Main Content */
-        .main-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-        
-        .breadcrumb {
-            font-size: 14px;
-            color: #666666;
-            margin-bottom: 32px;
-        }
-        
-        .breadcrumb a {
-            color: #2d5016;
-            text-decoration: none;
-        }
-        
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        
-        .page-title {
-            font-size: 36px;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 16px;
-        }
-        
-        .page-subtitle {
-            font-size: 20px;
-            color: #666666;
-            margin-bottom: 48px;
-        }
-        
-        .intro-text {
-            font-size: 18px;
-            color: #4a4a4a;
-            line-height: 1.8;
-            margin-bottom: 48px;
-            padding: 24px;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-        
-        .quality-section {
-            margin-bottom: 48px;
-            padding: 32px;
-            background: #ffffff;
-            border: 2px solid #e5e5e5;
-            border-radius: 12px;
-        }
-        
-        .quality-section.falldown {
-            border-color: #f59e0b;
-            background: #fffbeb;
-        }
-        
-        .quality-section.shop-grade {
-            border-color: #ef4444;
-            background: #fef2f2;
-        }
-        
-        .quality-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 24px;
-        }
-        
-        .quality-badge {
-            font-size: 32px;
-        }
-        
-        .quality-title {
-            font-size: 28px;
-            font-weight: 700;
-            color: #1a1a1a;
-        }
-        
-        .quality-description {
-            font-size: 16px;
-            color: #4a4a4a;
-            line-height: 1.8;
-            margin-bottom: 24px;
-            font-weight: 500;
-        }
-        
-        h3 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #2d5016;
-            margin-top: 24px;
-            margin-bottom: 12px;
-        }
-        
-        ul {
-            margin-left: 24px;
-            margin-bottom: 16px;
-        }
-        
-        li {
-            font-size: 16px;
-            color: #4a4a4a;
-            line-height: 1.8;
-            margin-bottom: 8px;
-        }
-        
-        .advantages {
-            background: transparent;
-            padding: 20px 0;
-            border-radius: 0;
-            margin-top: 16px;
-        }
-        
-        .advantages p {
-            font-size: 16px;
-            color: #2d5016;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        
-        .warning {
-            background: #fef2f2;
-            border-left: 4px solid #ef4444;
-            padding: 20px 24px;
-            border-radius: 4px;
-            margin-top: 16px;
-        }
-        
-        .warning p {
-            font-size: 16px;
-            color: #991b1b;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 32px 0;
-            background: #ffffff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        
-        .comparison-table thead {
-            background: #2d5016;
-            color: #ffffff;
-        }
-        
-        .comparison-table th {
-            padding: 16px;
-            text-align: left;
-            font-weight: 600;
-            font-size: 15px;
-        }
-        
-        .comparison-table td {
-            padding: 16px;
-            border-bottom: 1px solid #e5e5e5;
-            font-size: 15px;
-        }
-        
-        .comparison-table tbody tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .comparison-table tbody tr:hover {
-            background: #f8f9fa;
-        }
-        
-        .check {
-            color: #16a34a;
-            font-weight: 600;
-        }
-        
-        .cross {
-            color: #dc2626;
-            font-weight: 600;
-        }
-        
-        .benefits-section {
-            background: #f0f7ed;
-            padding: 32px;
-            border-radius: 12px;
-            margin: 48px 0;
-        }
-        
-        .benefits-section h3 {
-            color: #1a1a1a;
-            margin-top: 0;
-        }
-        
-        .cta-box {
-            background: #2d5016;
-            color: #ffffff;
-            padding: 32px;
-            border-radius: 12px;
-            text-align: center;
-            margin-top: 48px;
-        }
-        
-        .cta-box h3 {
-            color: #ffffff;
-            margin-top: 0;
-            font-size: 24px;
-        }
-        
-        .cta-box p {
-            font-size: 16px;
-            margin-bottom: 24px;
-            opacity: 0.9;
-        }
-        
-        .btn-cta {
-            display: inline-block;
-            background: #ffffff;
-            color: #2d5016;
-            padding: 14px 32px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: transform 0.2s;
-        }
-        
-        .btn-cta:hover {
-            transform: translateY(-2px);
-        }
-        
-        /* Footer */
-        .site-footer {
-            background: #f8f9fa;
-            padding: 48px 0 24px;
-            border-top: 1px solid #e5e5e5;
-            margin-top: 80px;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 32px;
-        }
-        
-        .footer-column h3 {
-            font-size: 15px;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 16px;
-        }
-        
-        .footer-link {
-            display: block;
-            color: #666666;
-            text-decoration: none;
-            font-size: 15px;
-            margin-bottom: 10px;
-            transition: color 0.3s;
-        }
-        
-        .footer-link:hover {
-            color: #2d5016;
-        }
-        
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 24px 20px 0;
-            border-top: 1px solid #e5e5e5;
-            text-align: center;
-        }
-        
-        .footer-bottom p {
-            color: #666666;
-            font-size: 15px;
-        }
-    </style>
+  <!-- Stylesheet Otimizado -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Canonical URL -->
+  <title>Qualidades NC: Falldown e Shop Grade - Repinho Compensados</title>
+  <meta name="description" content="Entenda as diferenças entre Falldown e Shop Grade - Qualidades NC (Não Conforme) de compensados">
+  <meta name="keywords" content="qualidade, falldown, shop grade, NC, compensados">
+  <meta name="author" content="Repinho Compensados">
+  <meta property="og:title" content="Qualidades NC - Repinho Compensados">
+  <meta property="og:description" content="Guia sobre qualidades NC de compensados.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://estoque.repinho.ind.br/nc-qualidades.html">
+  <link rel="canonical" href="https://estoque.repinho.ind.br/">
 </head>
 <body>
+
     <!-- Header -->
     <header class="site-header">
         <div class="header-container">
@@ -549,35 +197,56 @@
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Navegação</h3>
-                <a href="index.html" class="footer-link">Home</a>
-                <a href="entenda-produtos.html" class="footer-link">Entenda Nossos Produtos</a>
-                <a href="estoque.html" class="footer-link">Estoque Disponível</a>
-            </div>
-            <div class="footer-column">
-                <h3>Produtos</h3>
-                <a href="entenda-produtos.html#composicao" class="footer-link">Composição de Matéria-Prima</a>
-                <a href="entenda-produtos.html#portfolio" class="footer-link">Portfólio de Produtos</a>
-                <a href="entenda-produtos.html#qualidade" class="footer-link">Qualidade</a>
-            </div>
-            <div class="footer-column">
-                <h3>Contato</h3>
-                <a href="tel:+55423698500" class="footer-link">📞 (42) 3629-8500</a>
-                <a href="mailto:estoque@repinho.ind.br" class="footer-link">✉️ comercial1@repinho.ind.br</a>
-                <p class="footer-link">📍 Guarapuava, PR</p>
-            </div>
-            <div class="footer-column">
-                <h3>Institucional</h3>
-                <a href="https://repinho.ind.br" target="_blank" class="footer-link">Site Repinho ↗</a>
-            </div>
+      <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <!-- Navegação -->
+        <div class="footer-column">
+          <h3>Navegação</h3>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="entenda-produtos.html" class="footer-link">Entenda Nossos Produtos</a>
+            <a href="estoque.html" class="footer-link">Estoque Disponível</a>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2025 Repinho. Todos os direitos reservados. | <a href="#" style="color: #666666;">Fale conosco</a></p>
+        
+        <!-- Produtos -->
+        <div class="footer-column">
+          <h3>Produtos</h3>
+          <div class="footer-links">
+            <a href="entenda-produtos.html#composicao" class="footer-link">Composição de Matéria-Prima</a>
+            <a href="entenda-produtos.html#portfolio" class="footer-link">Portfólio de Produtos</a>
+            <a href="entenda-produtos.html#qualidade" class="footer-link">Qualidade</a>
+          </div>
         </div>
-    </footer>
+        
+        <!-- Contato -->
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <div class="footer-links">
+            <a href="tel:+554236298500" class="footer-link">📞 (42) 3629-8500</a>
+            <a href="mailto:comercial1@repinho.ind.br" class="footer-link">✉️ comercial1@repinho.ind.br</a>
+            <p class="footer-link">📍 Guarapuava, PR</p>
+          </div>
+        </div>
+        
+        <!-- Institucional -->
+        <div class="footer-column">
+          <h3>Institucional</h3>
+          <div class="footer-links">
+            <a href="https://repinho.ind.br" target="_blank" rel="noopener noreferrer" class="footer-link">Site Repinho ↗</a>
+            <a href="contato.html" class="footer-link">Fale conosco</a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 <a href="https://repinho.ind.br">Repinho</a>. Todos os direitos reservados. | <a href="contato.html">Fale conosco</a></p>
+      </div>
+    </div>
+  </footer>
 
 <!-- CSS do Modal -->
 <style>
@@ -791,6 +460,58 @@
         }
     });
 </script>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <!-- Navegação -->
+        <div class="footer-column">
+          <h3>Navegação</h3>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="entenda-produtos.html" class="footer-link">Entenda Nossos Produtos</a>
+            <a href="estoque.html" class="footer-link">Estoque Disponível</a>
+          </div>
+        </div>
+        
+        <!-- Produtos -->
+        <div class="footer-column">
+          <h3>Produtos</h3>
+          <div class="footer-links">
+            <a href="entenda-produtos.html#composicao" class="footer-link">Composição de Matéria-Prima</a>
+            <a href="entenda-produtos.html#portfolio" class="footer-link">Portfólio de Produtos</a>
+            <a href="entenda-produtos.html#qualidade" class="footer-link">Qualidade</a>
+          </div>
+        </div>
+        
+        <!-- Contato -->
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <div class="footer-links">
+            <a href="tel:+554236298500" class="footer-link">📞 (42) 3629-8500</a>
+            <a href="mailto:comercial1@repinho.ind.br" class="footer-link">✉️ comercial1@repinho.ind.br</a>
+            <p class="footer-link">📍 Guarapuava, PR</p>
+          </div>
+        </div>
+        
+        <!-- Institucional -->
+        <div class="footer-column">
+          <h3>Institucional</h3>
+          <div class="footer-links">
+            <a href="https://repinho.ind.br" target="_blank" rel="noopener noreferrer" class="footer-link">Site Repinho ↗</a>
+            <a href="contato.html" class="footer-link">Fale conosco</a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 <a href="https://repinho.ind.br">Repinho</a>. Todos os direitos reservados. | <a href="contato.html">Fale conosco</a></p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
