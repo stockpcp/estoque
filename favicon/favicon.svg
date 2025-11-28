@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Favicon SVG da Repinho - Logo em verde -->
+  <defs>
+    <style>
+      .leaf { fill: #2D5016; }
+      .leaf-light { fill: #3A6B1F; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="256" height="256" fill="#FFFFFF"/>
+  
+  <!-- Folha/Logo Repinho em SVG simplificado -->
+  <circle cx="128" cy="128" r="120" fill="none" stroke="#2D5016" stroke-width="2"/>
+  
+  <!-- Padrão de linhas diagonais (representando compensado) -->
+  <g class="leaf">
+    <line x1="80" y1="80" x2="176" y2="80" stroke="#2D5016" stroke-width="8" stroke-linecap="round"/>
+    <line x1="70" y1="110" x2="186" y2="110" stroke="#3A6B1F" stroke-width="8" stroke-linecap="round"/>
+    <line x1="80" y1="140" x2="176" y2="140" stroke="#2D5016" stroke-width="8" stroke-linecap="round"/>
+    <line x1="70" y1="170" x2="186" y2="170" stroke="#3A6B1F" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
